@@ -13,6 +13,7 @@
 		DB5A2D03216C221800281FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D01216C221800281FF2 /* Main.storyboard */; };
 		DB5A2D05216C221B00281FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D04216C221B00281FF2 /* Assets.xcassets */; };
 		DB5A2D08216C221B00281FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D06216C221B00281FF2 /* LaunchScreen.storyboard */; };
+		DBF34038216C5B7B0064BA67 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DB5A2D04216C221B00281FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5A2D07216C221B00281FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5A2D09216C221B00281FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DB5A2D04216C221B00281FF2 /* Assets.xcassets */,
 				DB5A2D06216C221B00281FF2 /* LaunchScreen.storyboard */,
 				DB5A2D09216C221B00281FF2 /* Info.plist */,
+				DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */,
 			);
 			path = TutorsApp;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5A2D00216C221800281FF2 /* SecondViewController.swift in Sources */,
+				DBF34038216C5B7B0064BA67 /* ProfileTableViewCell.swift in Sources */,
 				DB5A2CFC216C221800281FF2 /* AppDelegate.swift in Sources */,
 				DB5A2CFE216C221800281FF2 /* FirstViewController.swift in Sources */,
 			);

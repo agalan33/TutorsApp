@@ -8,13 +8,47 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var profileTableView: UITableView!
+    
+    let sections = ["", "Settings"]
+    let profileSettings = ["My Chats", "Tutors Rated"]
+    let settings = ["General Settings", "Account Settings"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        profileTableView.delegate = self
+        profileTableView.dataSource = self
+        profileTableView.reloadData()
     }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0{
+            return profileSettings.count
+        }
+        else{
+            return settings.count
+        }
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Profile Cell") as! ProfileTableViewCell
+        if indexPath.section == 0{
+            cell.SettingName.text = profileSettings[indexPath.row]
+        }
+        else{
+            cell.SettingName.text = settings[indexPath.row]
+        }
+        
+        return cell
+    }
+    
 
 }
 
