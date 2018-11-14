@@ -12,9 +12,9 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
 
     @IBOutlet weak var profileTableView: UITableView!
     
-    let sections = ["", "Settings"]
+    let sections = ["", "Tutor"]
     let profileSettings = ["My Chats", "Tutors Rated"]
-    let settings = ["General Settings", "Account Settings"]
+    let settings = ["My Information Displayed", "My Offers"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

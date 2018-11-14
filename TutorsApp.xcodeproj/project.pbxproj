@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C31D9E165546546F68683DF /* Pods_TutorsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0FF0BB69244906E48D09E1 /* Pods_TutorsApp.framework */; };
 		DB5A2CFC216C221800281FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFB216C221800281FF2 /* AppDelegate.swift */; };
 		DB5A2CFE216C221800281FF2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFD216C221800281FF2 /* FirstViewController.swift */; };
 		DB5A2D00216C221800281FF2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFF216C221800281FF2 /* SecondViewController.swift */; };
 		DB5A2D03216C221800281FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D01216C221800281FF2 /* Main.storyboard */; };
 		DB5A2D05216C221B00281FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D04216C221B00281FF2 /* Assets.xcassets */; };
 		DB5A2D08216C221B00281FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D06216C221B00281FF2 /* LaunchScreen.storyboard */; };
+		DBC3F603219BD55A009B54FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */; };
 		DBF34038216C5B7B0064BA67 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2065BAE502F1C9F456AA7655 /* Pods-TutorsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorsApp.debug.xcconfig"; path = "Target Support Files/Pods-TutorsApp/Pods-TutorsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2D0FF0BB69244906E48D09E1 /* Pods_TutorsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TutorsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF23C6017E681C4184895AEF /* Pods-TutorsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorsApp.release.xcconfig"; path = "Target Support Files/Pods-TutorsApp/Pods-TutorsApp.release.xcconfig"; sourceTree = "<group>"; };
 		DB5A2CF8216C221800281FF2 /* TutorsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5A2CFB216C221800281FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5A2CFD216C221800281FF2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +30,7 @@
 		DB5A2D04216C221B00281FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5A2D07216C221B00281FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5A2D09216C221B00281FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C31D9E165546546F68683DF /* Pods_TutorsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C760075F006D3A3E6CA3E9E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2065BAE502F1C9F456AA7655 /* Pods-TutorsApp.debug.xcconfig */,
+				AF23C6017E681C4184895AEF /* Pods-TutorsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA1C94C55F193F2197B5C2D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D0FF0BB69244906E48D09E1 /* Pods_TutorsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB5A2CEF216C221800281FF2 = {
 			isa = PBXGroup;
 			children = (
 				DB5A2CFA216C221800281FF2 /* TutorsApp */,
 				DB5A2CF9216C221800281FF2 /* Products */,
+				C760075F006D3A3E6CA3E9E9 /* Pods */,
+				CA1C94C55F193F2197B5C2D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,13 +87,22 @@
 				DB5A2CFB216C221800281FF2 /* AppDelegate.swift */,
 				DB5A2CFD216C221800281FF2 /* FirstViewController.swift */,
 				DB5A2CFF216C221800281FF2 /* SecondViewController.swift */,
+				DBC3F604219BE4B9009B54FD /* Authentification */,
 				DB5A2D01216C221800281FF2 /* Main.storyboard */,
 				DB5A2D04216C221B00281FF2 /* Assets.xcassets */,
 				DB5A2D06216C221B00281FF2 /* LaunchScreen.storyboard */,
 				DB5A2D09216C221B00281FF2 /* Info.plist */,
 				DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */,
+				DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */,
 			);
 			path = TutorsApp;
+			sourceTree = "<group>";
+		};
+		DBC3F604219BE4B9009B54FD /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB5A2D0C216C221B00281FF2 /* Build configuration list for PBXNativeTarget "TutorsApp" */;
 			buildPhases = (
+				93A94B5D8921140FF833317D /* [CP] Check Pods Manifest.lock */,
 				DB5A2CF4216C221800281FF2 /* Sources */,
 				DB5A2CF5216C221800281FF2 /* Frameworks */,
 				DB5A2CF6216C221800281FF2 /* Resources */,
+				1A19DB5FE15F2611ABA05FEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,12 +166,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5A2D08216C221B00281FF2 /* LaunchScreen.storyboard in Resources */,
+				DBC3F603219BD55A009B54FD /* GoogleService-Info.plist in Resources */,
 				DB5A2D05216C221B00281FF2 /* Assets.xcassets in Resources */,
 				DB5A2D03216C221800281FF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A19DB5FE15F2611ABA05FEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TutorsApp/Pods-TutorsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TutorsApp/Pods-TutorsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A94B5D8921140FF833317D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TutorsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB5A2CF4216C221800281FF2 /* Sources */ = {
@@ -288,6 +383,7 @@
 		};
 		DB5A2D0D216C221B00281FF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2065BAE502F1C9F456AA7655 /* Pods-TutorsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,15 +393,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HubColegial.TutorsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HubColegial.TutorsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DB5A2D0E216C221B00281FF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF23C6017E681C4184895AEF /* Pods-TutorsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,10 +412,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HubColegial.TutorsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HubColegial.TutorsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -72,32 +72,67 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lgb-tN-yIL">
-                                <rect key="frame" x="0.0" y="116" width="375" height="502"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Cby-7N-Rpb">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CM-Js-O8V">
+                                            <rect key="frame" x="96" y="23" width="271" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="khl-Yu-Y8x"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.46274509800000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmP-8w-73B">
+                                            <rect key="frame" x="104" y="52" width="263" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Tnd-ET-v49"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.46274509800000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Prodifile" translatesAutoresizingMaskIntoConstraints="NO" id="Nzv-PP-whV">
+                                            <rect key="frame" x="8" y="8" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="BxI-Ea-hRL"/>
+                                                <constraint firstAttribute="width" constant="80" id="vRs-PW-pZC"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Nzv-PP-whV" firstAttribute="top" secondItem="Cby-7N-Rpb" secondAttribute="top" constant="8" id="1f2-Vq-SWC"/>
+                                        <constraint firstAttribute="bottom" secondItem="Nzv-PP-whV" secondAttribute="bottom" constant="20" id="9eO-4J-8dD"/>
+                                        <constraint firstItem="cmP-8w-73B" firstAttribute="leading" secondItem="Nzv-PP-whV" secondAttribute="trailing" constant="16" id="H3N-hq-NWh"/>
+                                        <constraint firstItem="0CM-Js-O8V" firstAttribute="leading" secondItem="Nzv-PP-whV" secondAttribute="trailing" constant="8" id="OZu-qU-xhl"/>
+                                        <constraint firstItem="cmP-8w-73B" firstAttribute="top" secondItem="0CM-Js-O8V" secondAttribute="bottom" constant="8" id="QO0-Zb-lJ5"/>
+                                        <constraint firstItem="Nzv-PP-whV" firstAttribute="leading" secondItem="Cby-7N-Rpb" secondAttribute="leading" constant="8" id="YqC-fo-zMn"/>
+                                        <constraint firstAttribute="trailing" secondItem="0CM-Js-O8V" secondAttribute="trailing" constant="8" id="dsT-2S-oMR"/>
+                                        <constraint firstItem="0CM-Js-O8V" firstAttribute="top" secondItem="Cby-7N-Rpb" secondAttribute="top" constant="23" id="o11-Yc-cPy"/>
+                                        <constraint firstAttribute="trailing" secondItem="cmP-8w-73B" secondAttribute="trailing" constant="8" id="sED-xe-vtB"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Profile Cell" rowHeight="40" id="9YX-sz-xTQ" customClass="ProfileTableViewCell" customModule="TutorsApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="163.5" width="375" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9YX-sz-xTQ" id="PUI-KB-3hL">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CN-tH-CTN">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CN-tH-CTN">
                                                     <rect key="frame" x="15" y="11" width="345" height="18"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="18" id="RYM-G8-JnW"/>
-                                                    </constraints>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="5CN-tH-CTN" firstAttribute="leading" secondItem="PUI-KB-3hL" secondAttribute="leadingMargin" id="1Lb-kg-AuQ"/>
-                                                <constraint firstItem="5CN-tH-CTN" firstAttribute="trailing" secondItem="PUI-KB-3hL" secondAttribute="trailingMargin" id="BJP-e4-qfY"/>
-                                                <constraint firstItem="5CN-tH-CTN" firstAttribute="top" secondItem="PUI-KB-3hL" secondAttribute="topMargin" id="Bs5-Uf-Fva"/>
-                                                <constraint firstItem="5CN-tH-CTN" firstAttribute="bottom" secondItem="PUI-KB-3hL" secondAttribute="bottomMargin" id="h96-Ga-n9j"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="SettingName" destination="5CN-tH-CTN" id="FqI-p0-Ahf"/>
@@ -108,21 +143,23 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lgb-tN-yIL" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="FPY-Rk-dmE"/>
-                            <constraint firstItem="lgb-tN-yIL" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="KkM-f1-JJN"/>
-                            <constraint firstItem="lgb-tN-yIL" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="Lij-1y-KBD"/>
-                            <constraint firstItem="lgb-tN-yIL" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="khr-ar-TEJ"/>
+                            <constraint firstItem="lgb-tN-yIL" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="6dT-7H-csb"/>
+                            <constraint firstItem="lgb-tN-yIL" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="es4-Do-xDm"/>
+                            <constraint firstItem="lgb-tN-yIL" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="hXg-Sk-Vdb"/>
+                            <constraint firstItem="lgb-tN-yIL" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="x2v-Qg-C82"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Profile" id="7sz-wZ-fMT"/>
+                    <navigationItem key="navigationItem" title="My Profile" id="7sz-wZ-fMT">
+                        <barButtonItem key="rightBarButtonItem" image="SettingsTab" id="LNv-lW-xhW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="profileTableView" destination="lgb-tN-yIL" id="Tbo-Zw-IfD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689" y="877"/>
+            <point key="canvasLocation" x="1688.8" y="876.61169415292363"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Owd-n2-gTU">
@@ -137,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aF3-k8-Fix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2798" y="-55"/>
+            <point key="canvasLocation" x="-3377" y="-55"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SId-T5-Q5Z">
@@ -152,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8sm-QW-BFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1865" y="-55"/>
+            <point key="canvasLocation" x="-2474" y="-55"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -162,11 +199,13 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.46274509800000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.46274509800000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="iZ3-wU-ucS" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8eP-tp-PCE" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="GFy-VW-7mw" kind="relationship" relationship="viewControllers" id="kaB-ll-gO2"/>
+                        <segue destination="8eP-tp-PCE" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -203,11 +242,14 @@
         <scene sceneID="2Sn-YD-6Kr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8eP-tp-PCE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Profile" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="My Profile" image="myProfile" id="cPa-gy-q4n">
+                        <color key="badgeColor" red="0.0" green="0.46274509800000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="73R-YP-uGC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="73R-YP-uGC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.46274509800000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" red="0.0" green="0.46274509800000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
@@ -228,7 +270,9 @@
         <scene sceneID="dzN-sW-9eB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GFy-VW-7mw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tutors" id="pVG-hC-n9n"/>
+                    <tabBarItem key="tabBarItem" title="Tutors" id="pVG-hC-n9n">
+                        <color key="badgeColor" red="0.0" green="0.46274509800000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="me4-Qx-7g1">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
@@ -252,7 +296,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Prodifile" width="1707" height="1707"/>
+        <image name="SettingsTab" width="20" height="20"/>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="myProfile" width="19.5" height="19.5"/>
     </resources>
 </document>
