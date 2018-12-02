@@ -7,14 +7,33 @@
 // lol
 
 import UIKit
+import Firebase
 
 class FirstViewController: UIViewController {
+    
+    var tutors = [Tutors]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        rt()
     }
 
+    
+    func rt(){
+        let db = Firestore.firestore()
+        db.collection("HubColegial").document("Tutors").collection("TutorsList").getDocuments() { (querySnapshot, err) in
+            self.tutors = [Tutors]()
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let newTutor = Tutors(snapshot: document)
+                    print(newTutor.tutorClasses.count)
+                    self.tutors.append(newTutor)
+                }
+            }
+        }
+    }
 
 }
 

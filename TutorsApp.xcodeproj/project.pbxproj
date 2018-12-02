@@ -14,6 +14,9 @@
 		DB5A2D03216C221800281FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D01216C221800281FF2 /* Main.storyboard */; };
 		DB5A2D05216C221B00281FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D04216C221B00281FF2 /* Assets.xcassets */; };
 		DB5A2D08216C221B00281FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D06216C221B00281FF2 /* LaunchScreen.storyboard */; };
+		DB94AE87219CF11D00355792 /* Tutors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94AE86219CF11D00355792 /* Tutors.swift */; };
+		DB94AE89219CFC0600355792 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94AE88219CFC0600355792 /* Schedule.swift */; };
+		DB94AE8B219CFC2000355792 /* TutorsClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94AE8A219CFC2000355792 /* TutorsClasses.swift */; };
 		DBC3F603219BD55A009B54FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */; };
 		DBC3F606219BE592009B54FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F605219BE592009B54FD /* LoginViewController.swift */; };
 		DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */; };
@@ -32,6 +35,9 @@
 		DB5A2D04216C221B00281FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5A2D07216C221B00281FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5A2D09216C221B00281FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB94AE86219CF11D00355792 /* Tutors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutors.swift; sourceTree = "<group>"; };
+		DB94AE88219CFC0600355792 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		DB94AE8A219CFC2000355792 /* TutorsClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorsClasses.swift; sourceTree = "<group>"; };
 		DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBC3F605219BE592009B54FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVerifierViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 				DB5A2CFF216C221800281FF2 /* SecondViewController.swift */,
 				DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */,
 				DBC3F604219BE4B9009B54FD /* Authentification */,
+				DB94AE85219CF0D400355792 /* FireStoreClasses */,
 				DB5A2D01216C221800281FF2 /* Main.storyboard */,
 				DB5A2D04216C221B00281FF2 /* Assets.xcassets */,
 				DB5A2D06216C221B00281FF2 /* LaunchScreen.storyboard */,
@@ -100,6 +107,16 @@
 				DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */,
 			);
 			path = TutorsApp;
+			sourceTree = "<group>";
+		};
+		DB94AE85219CF0D400355792 /* FireStoreClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DB94AE86219CF11D00355792 /* Tutors.swift */,
+				DB94AE88219CFC0600355792 /* Schedule.swift */,
+				DB94AE8A219CFC2000355792 /* TutorsClasses.swift */,
+			);
+			path = FireStoreClasses;
 			sourceTree = "<group>";
 		};
 		DBC3F604219BE4B9009B54FD /* Authentification */ = {
@@ -257,8 +274,11 @@
 				DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */,
 				DB5A2D00216C221800281FF2 /* SecondViewController.swift in Sources */,
 				DBF34038216C5B7B0064BA67 /* ProfileTableViewCell.swift in Sources */,
+				DB94AE8B219CFC2000355792 /* TutorsClasses.swift in Sources */,
 				DB5A2CFC216C221800281FF2 /* AppDelegate.swift in Sources */,
+				DB94AE87219CF11D00355792 /* Tutors.swift in Sources */,
 				DBC3F606219BE592009B54FD /* LoginViewController.swift in Sources */,
+				DB94AE89219CFC0600355792 /* Schedule.swift in Sources */,
 				DB5A2CFE216C221800281FF2 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
