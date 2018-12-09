@@ -22,6 +22,9 @@
 		DB9D590F21BC82540031E574 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D590E21BC82540031E574 /* User.swift */; };
 		DB9D591121BC94820031E574 /* OTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591021BC94820031E574 /* OTableViewCell.swift */; };
 		DB9D591321BC94DC0031E574 /* OffersResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591221BC94DC0031E574 /* OffersResult.swift */; };
+		DB9D591521BD63420031E574 /* MCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591421BD63420031E574 /* MCTableViewCell.swift */; };
+		DB9D591721BD63C90031E574 /* MyClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591621BD63C90031E574 /* MyClasses.swift */; };
+		DB9D591921BD7A1C0031E574 /* MOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591821BD7A1C0031E574 /* MOTableViewCell.swift */; };
 		DBC3F603219BD55A009B54FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */; };
 		DBC3F606219BE592009B54FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F605219BE592009B54FD /* LoginViewController.swift */; };
 		DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */; };
@@ -50,6 +53,9 @@
 		DB9D590E21BC82540031E574 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DB9D591021BC94820031E574 /* OTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTableViewCell.swift; sourceTree = "<group>"; };
 		DB9D591221BC94DC0031E574 /* OffersResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersResult.swift; sourceTree = "<group>"; };
+		DB9D591421BD63420031E574 /* MCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D591621BD63C90031E574 /* MyClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClasses.swift; sourceTree = "<group>"; };
+		DB9D591821BD7A1C0031E574 /* MOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTableViewCell.swift; sourceTree = "<group>"; };
 		DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBC3F605219BE592009B54FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVerifierViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +124,9 @@
 				DB9D590C21BC3C0F0031E574 /* OfferClassesTableViewCell.swift */,
 				DB9D591221BC94DC0031E574 /* OffersResult.swift */,
 				DB9D591021BC94820031E574 /* OTableViewCell.swift */,
+				DB9D591421BD63420031E574 /* MCTableViewCell.swift */,
+				DB9D591621BD63C90031E574 /* MyClasses.swift */,
+				DB9D591821BD7A1C0031E574 /* MOTableViewCell.swift */,
 				DBC3F604219BE4B9009B54FD /* Authentification */,
 				DB94AE85219CF0D400355792 /* FireStoreClasses */,
 				DB5A2D01216C221800281FF2 /* Main.storyboard */,
@@ -292,15 +301,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB9D591921BD7A1C0031E574 /* MOTableViewCell.swift in Sources */,
 				DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */,
 				DB9D591321BC94DC0031E574 /* OffersResult.swift in Sources */,
 				DB5A2D00216C221800281FF2 /* Profile.swift in Sources */,
 				DB9D591121BC94820031E574 /* OTableViewCell.swift in Sources */,
+				DB9D591521BD63420031E574 /* MCTableViewCell.swift in Sources */,
 				DBF34038216C5B7B0064BA67 /* ProfileTableViewCell.swift in Sources */,
 				DB15A12921B8979F00C10542 /* Departments.swift in Sources */,
 				DB15A12B21B89D5000C10542 /* FirebaseDepartments.swift in Sources */,
 				DB15A12D21B89DF000C10542 /* FirebaseClasses.swift in Sources */,
 				DB9D590F21BC82540031E574 /* User.swift in Sources */,
+				DB9D591721BD63C90031E574 /* MyClasses.swift in Sources */,
 				DBF8C96121B9B4AC00681727 /* Offers.swift in Sources */,
 				DB15A13021B8A4A100C10542 /* DeptTableViewCell.swift in Sources */,
 				DBF8C96321B9BFF200681727 /* MyOffers.swift in Sources */,

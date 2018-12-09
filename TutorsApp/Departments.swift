@@ -17,6 +17,7 @@ class Departments: UIViewController, UITableViewDelegate, UITableViewDataSource,
     
     var ref: DatabaseReference!
     var depts = [FirebaseDepartments]()
+    var filteredDepts = [FirebaseDepartments]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class Departments: UIViewController, UITableViewDelegate, UITableViewDataSource,
         deptsTableView.delegate = self
         deptsTableView.dataSource = self
         searchB.delegate = self
-        // Do any additional setup after loading the view.
+        searchB.autocapitalizationType = .allCharacters
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,19 +36,35 @@ class Departments: UIViewController, UITableViewDelegate, UITableViewDataSource,
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return depts.count
+        return filteredDepts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Dept") as! DeptTableViewCell
-        cell.deptName.text = depts[indexPath.row].departmentName
+        cell.deptName.text = filteredDepts[indexPath.row].departmentName
+        cell.selectionStyle = .none
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "off") as! OffersResult
         vc.isTutor = false
-        vc.deptName = depts[indexPath.row].departmentName!
+        vc.deptName = filteredDepts[indexPath.row].departmentName!
         self.show(vc, sender: self)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        
+        filteredDepts = depts.filter({ sc -> Bool in
+            guard let text = searchB.text else{return false}
+            return ((sc.departmentName?.lowercased().contains(text.lowercased()))!)
+        })
+        
+        if searchB.text == nil || searchB.text == ""{
+            filteredDepts = depts
+        }
+        
+        deptsTableView.reloadData()
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -73,6 +90,7 @@ class Departments: UIViewController, UITableViewDelegate, UITableViewDataSource,
                 let newDept = FirebaseDepartments(snapshot: ds as! DataSnapshot)
                 self.depts.append(newDept)
             }
+            self.filteredDepts = self.depts
             self.deptsTableView.reloadData()
         }))
     }

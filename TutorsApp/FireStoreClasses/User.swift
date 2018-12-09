@@ -15,9 +15,11 @@ class User: NSObject {
     var offerClasses = [String]()
     var offers = [Offers]()
     var ref: DatabaseReference!
+    var firebaseKey: String?
     
     init(snapshot: DataSnapshot){
         self.ref = snapshot.ref
+        self.firebaseKey = snapshot.key
         let value = snapshot.value as! [String: Any]
         self.name = value["Name"] as? String
         self.rating = value["Rating"] as? Double

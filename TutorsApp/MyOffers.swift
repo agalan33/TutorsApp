@@ -89,11 +89,12 @@ class MyOffers: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
             return cell
         }
         else{
-            print(offers[indexPath.row].title!)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MO") as! MOTableViewCell
+            cell.title.text = offers[indexPath.row].title
+            cell.comment.text = offers[indexPath.row].comment
+            cell.img.image = UIImage(named: offers[indexPath.row].offerImage!)
+            return cell
         }
-        let cell = UITableViewCell(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        
-        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

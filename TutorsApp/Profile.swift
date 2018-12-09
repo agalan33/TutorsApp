@@ -12,10 +12,14 @@ import Firebase
 class Profile: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var profileTableView: UITableView!
+    @IBOutlet weak var myName: UILabel!
+    @IBOutlet weak var myStatus: UILabel!
+    
     
     let sections = ["", "Tutor"]
     let profileSettings = ["My Chats", "Tutors Rated"]
-    let settings = ["My Information Displayed", "My Offers"]
+    let settings = ["My Classes", "My Offers", "My Reviews"]
+    var userInfo: User?
     
     var ref: DatabaseReference!
     let user = Auth.auth().currentUser
@@ -26,6 +30,12 @@ class Profile: UIViewController, UITableViewDataSource, UITableViewDelegate {
         profileTableView.delegate = self
         profileTableView.dataSource = self
         profileTableView.reloadData()
+        myStatus.text = "Tutor"
+        myUser()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
     }
     
 
@@ -60,12 +70,19 @@ class Profile: UIViewController, UITableViewDataSource, UITableViewDelegate {
             let vc = storyboard?.instantiateViewController(withIdentifier: "myOffers") as! MyOffers
             self.show(vc, sender: self)
         }
+        else if indexPath.section == 1 && indexPath.row == 0{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "mc") as! MyClasses
+            self.show(vc, sender: self)
+        }
     }
     
     func myUser(){
         self.ref = Database.database(url: "https://hubcolegial-tutorsapp.firebaseio.com/").reference(withPath: "Tutors")
         self.ref.child((user?.uid)!).observe(.value) { (snapshot) in
-            
+            let newUser = User(snapshot: snapshot)
+            self.userInfo = newUser
+            self.myName.text = self.userInfo?.name!
+            self.myStatus.text = "My Rating: \(self.userInfo?.rating! ?? 0.0)"
         }
     }
 }

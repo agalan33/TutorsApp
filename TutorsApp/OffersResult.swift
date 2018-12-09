@@ -12,6 +12,12 @@ import Firebase
 class OffersResult: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var offersTableView: UITableView!
+    @IBOutlet weak var noOffersView: UIView!
+    @IBOutlet weak var noOffersLabel: UILabel!
+    @IBOutlet weak var loadingOffers: UIActivityIndicatorView!
+    
+    
+    
     var offers = [Offers]()
     var keys = [String]()
     var ref: DatabaseReference!
@@ -27,8 +33,10 @@ class OffersResult: UIViewController, UITableViewDelegate, UITableViewDataSource
         self.navigationController?.navigationBar.isHidden = false
         offersTableView.dataSource = self
         offersTableView.delegate = self
+        noOffersLabel.isHidden = true
+        loadingOffers.startAnimating()
         if isTutor{
-            print("wepa")
+            retrieveByTutor(tutorN: tutorName!)
         }
         else{
             retrieveByDept(dept: deptName!)
@@ -36,6 +44,9 @@ class OffersResult: UIViewController, UITableViewDelegate, UITableViewDataSource
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+    }
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
     }
@@ -72,32 +83,79 @@ class OffersResult: UIViewController, UITableViewDelegate, UITableViewDataSource
         }
     }
     
+    
+    
+    func retrieveByTutor(tutorN: String){
+        self.ref = Database.database(url: "https://hubcolegial-tutorsapp.firebaseio.com/").reference(withPath: "Tutors")
+        self.ref.observe(.value) { (snapshot) in
+            for i in snapshot.children{
+                let newUser = User(snapshot: i as! DataSnapshot)
+                if newUser.name?.lowercased() == tutorN.lowercased(){
+                    self.userInfo = newUser
+                    self.offers = (self.userInfo?.offers)!
+                    break
+                }
+            }
+            if self.offers.isEmpty{
+                print("no hay nada")
+                self.loadingOffers.stopAnimating()
+                self.loadingOffers.isHidden = true
+                self.noOffersLabel.isHidden = false
+                self.noOffersView.isHidden = false
+            }
+            else{
+                self.loadingOffers.stopAnimating()
+                self.loadingOffers.isHidden = true
+                self.noOffersLabel.isHidden = true
+                self.noOffersView.isHidden = true
+                self.offersTableView.reloadData()
+            }
+        }
+    }
+    
     func retrieveByDept(dept: String){
         self.ref = Database.database(url: "https://hubcolegial-tutorsapp.firebaseio.com/").reference(withPath: "Departments")
         if dept.count > 4{
             self.ref.child(dept[0..<4]).child(dept).observe(.value) { (snapshot) in
-                self.offers = [Offers]()
-                self.keys = [String]()
-                for i in snapshot.children{
-                    let p = i as! DataSnapshot
-                    self.retrieveOffers(key: p.key, uid: p.value as! String)
+                if snapshot.exists(){
+                    self.offers = [Offers]()
+                    self.keys = [String]()
+                    for i in snapshot.children{
+                        let p = i as! DataSnapshot
+                        self.retrieveOffers(key: p.key, uid: p.value as! String)
+                    }
+                    self.offersTableView.reloadData()
                 }
-                self.offersTableView.reloadData()
+                else{
+                    print("no hay nada")
+                    self.loadingOffers.stopAnimating()
+                    self.loadingOffers.isHidden = true
+                    self.noOffersLabel.isHidden = false
+                    self.noOffersView.isHidden = false
+                }
             }
         }
         else{
-            print("por aqui es")
             self.ref.child(dept).observe(.value) { (snapshot) in
-                self.offers = [Offers]()
-                for i in snapshot.children{
-                    let p = i as! DataSnapshot
-                    for j in p.children{
-                        let d = j as! DataSnapshot
-                        print(d.key)
-                        self.retrieveOffers(key: d.key, uid: d.value as! String)
+                if snapshot.exists(){
+                    self.offers = [Offers]()
+                    for i in snapshot.children{
+                        let p = i as! DataSnapshot
+                        for j in p.children{
+                            let d = j as! DataSnapshot
+                            print(d.key)
+                            self.retrieveOffers(key: d.key, uid: d.value as! String)
+                        }
                     }
+                    self.offersTableView.reloadData()
                 }
-                self.offersTableView.reloadData()
+                else{
+                    print("no hay nada")
+                    self.loadingOffers.stopAnimating()
+                    self.loadingOffers.isHidden = true
+                    self.noOffersLabel.isHidden = false
+                    self.noOffersView.isHidden = false
+                }
             }
         }
     }
@@ -108,6 +166,19 @@ class OffersResult: UIViewController, UITableViewDelegate, UITableViewDataSource
             if !self.keys.contains(newOffer.firebaseKey!){
                 self.offers.append(newOffer)
                 self.keys.append(newOffer.firebaseKey!)
+            }
+            if self.offers.isEmpty{
+                print("no hay nada")
+                self.loadingOffers.stopAnimating()
+                self.loadingOffers.isHidden = true
+                self.noOffersLabel.isHidden = false
+                self.noOffersView.isHidden = false
+            }
+            else{
+                self.loadingOffers.stopAnimating()
+                self.loadingOffers.isHidden = true
+                self.noOffersLabel.isHidden = true
+                self.noOffersView.isHidden = true
             }
             self.offersTableView.reloadData()
         }

@@ -15,6 +15,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var searchField: UITextField!
     @IBOutlet weak var constraint: NSLayoutConstraint!
     
+    var possibleInputs = ["Math" : "MATE", "Mathematics": "MATE", "Programming" : "ICOM", "Biology" : "BIOL", "Chemistry" : "QUIM", "Quimica" : "QUIM", "Matematicas" : "MATE", "Matematica" : "MATE", "Programacion" : "ICOM", "Fisica" : "FISI", "Industrial" : "ININ", "Mecanica" : "INME", "Biologia" :"BIOL"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,10 +40,19 @@ class FirstViewController: UIViewController, UITextFieldDelegate{
             let vc = storyboard?.instantiateViewController(withIdentifier: "off") as! OffersResult
             if classOrTutor.selectedSegmentIndex == 0{
                 vc.isTutor = false
-                vc.deptName = searchField.text
+                let keys = Array(possibleInputs.keys)
+                for i in keys{
+                    if i.lowercased() == searchField.text?.lowercased(){
+                        vc.deptName = possibleInputs[i]
+                    }
+                }
+                if !keys.contains((searchField.text?.lowercased())!){
+                    vc.deptName = searchField.text
+                }
             }
             else{
                 vc.isTutor = true
+                vc.tutorName = searchField.text
             }
             self.dismissKeyboard()
             self.show(vc, sender: self)
@@ -52,9 +62,11 @@ class FirstViewController: UIViewController, UITextFieldDelegate{
     @IBAction func ClassOrTutorObserver(_ sender: Any) {
         if classOrTutor.selectedSegmentIndex == 0{
             searchField.placeholder = "Search for Class"
+            searchField.autocapitalizationType = .allCharacters
         }
         else{
             searchField.placeholder = "Search for Tutor"
+            searchField.autocapitalizationType = .sentences
         }
     }
     
