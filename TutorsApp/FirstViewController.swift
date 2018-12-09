@@ -9,31 +9,86 @@
 import UIKit
 import Firebase
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITextFieldDelegate{
     
-    var tutors = [Tutors]()
+    @IBOutlet weak var classOrTutor: UISegmentedControl!
+    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var constraint: NSLayoutConstraint!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        rt()
+        self.navigationController?.navigationBar.isHidden = true
+        constraint.constant = 18
+        searchField.delegate = self
+        if classOrTutor.selectedSegmentIndex == 0{
+            searchField.placeholder = "Search for Class"
+        }
+        else{
+            searchField.placeholder = "Search for Tutor"
+        }
+       
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
     
-    func rt(){
-        let db = Firestore.firestore()
-        db.collection("HubColegial").document("Tutors").collection("TutorsList").getDocuments() { (querySnapshot, err) in
-            self.tutors = [Tutors]()
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    let newTutor = Tutors(snapshot: document)
-                    print(newTutor.tutorClasses.count)
-                    self.tutors.append(newTutor)
-                }
+    @IBAction func SearchButton(_ sender: Any) {
+        if searchField.text != ""{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "off") as! OffersResult
+            if classOrTutor.selectedSegmentIndex == 0{
+                vc.isTutor = false
+                vc.deptName = searchField.text
             }
+            else{
+                vc.isTutor = true
+            }
+            self.dismissKeyboard()
+            self.show(vc, sender: self)
         }
     }
-
+    
+    @IBAction func ClassOrTutorObserver(_ sender: Any) {
+        if classOrTutor.selectedSegmentIndex == 0{
+            searchField.placeholder = "Search for Class"
+        }
+        else{
+            searchField.placeholder = "Search for Tutor"
+        }
+    }
+    
+    @IBAction func helpButton(_ sender: Any) {
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.3) {
+            self.constraint.constant = -20
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchField.endEditing(true)
+        return true
+    }
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+        dismissKeyboard()
+        UIView.animate(withDuration: 0.3) {
+            self.constraint.constant = 18
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    
+    func dismissKeyboard(){
+        self.view.endEditing(true)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismissKeyboard()
+    }
+    
+    
 }
 

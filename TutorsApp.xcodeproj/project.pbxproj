@@ -8,40 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		7C31D9E165546546F68683DF /* Pods_TutorsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0FF0BB69244906E48D09E1 /* Pods_TutorsApp.framework */; };
+		DB15A12921B8979F00C10542 /* Departments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15A12821B8979F00C10542 /* Departments.swift */; };
+		DB15A12B21B89D5000C10542 /* FirebaseDepartments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15A12A21B89D5000C10542 /* FirebaseDepartments.swift */; };
+		DB15A12D21B89DF000C10542 /* FirebaseClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15A12C21B89DF000C10542 /* FirebaseClasses.swift */; };
+		DB15A13021B8A4A100C10542 /* DeptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15A12F21B8A4A100C10542 /* DeptTableViewCell.swift */; };
 		DB5A2CFC216C221800281FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFB216C221800281FF2 /* AppDelegate.swift */; };
 		DB5A2CFE216C221800281FF2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFD216C221800281FF2 /* FirstViewController.swift */; };
-		DB5A2D00216C221800281FF2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFF216C221800281FF2 /* SecondViewController.swift */; };
+		DB5A2D00216C221800281FF2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFF216C221800281FF2 /* Profile.swift */; };
 		DB5A2D03216C221800281FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D01216C221800281FF2 /* Main.storyboard */; };
 		DB5A2D05216C221B00281FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D04216C221B00281FF2 /* Assets.xcassets */; };
 		DB5A2D08216C221B00281FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D06216C221B00281FF2 /* LaunchScreen.storyboard */; };
-		DB94AE87219CF11D00355792 /* Tutors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94AE86219CF11D00355792 /* Tutors.swift */; };
-		DB94AE89219CFC0600355792 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94AE88219CFC0600355792 /* Schedule.swift */; };
-		DB94AE8B219CFC2000355792 /* TutorsClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94AE8A219CFC2000355792 /* TutorsClasses.swift */; };
+		DB9D590D21BC3C0F0031E574 /* OfferClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D590C21BC3C0F0031E574 /* OfferClassesTableViewCell.swift */; };
+		DB9D590F21BC82540031E574 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D590E21BC82540031E574 /* User.swift */; };
+		DB9D591121BC94820031E574 /* OTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591021BC94820031E574 /* OTableViewCell.swift */; };
+		DB9D591321BC94DC0031E574 /* OffersResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591221BC94DC0031E574 /* OffersResult.swift */; };
 		DBC3F603219BD55A009B54FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */; };
 		DBC3F606219BE592009B54FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F605219BE592009B54FD /* LoginViewController.swift */; };
 		DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */; };
 		DBF34038216C5B7B0064BA67 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */; };
+		DBF8C96121B9B4AC00681727 /* Offers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C96021B9B4AC00681727 /* Offers.swift */; };
+		DBF8C96321B9BFF200681727 /* MyOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C96221B9BFF200681727 /* MyOffers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2065BAE502F1C9F456AA7655 /* Pods-TutorsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorsApp.debug.xcconfig"; path = "Target Support Files/Pods-TutorsApp/Pods-TutorsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2D0FF0BB69244906E48D09E1 /* Pods_TutorsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TutorsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF23C6017E681C4184895AEF /* Pods-TutorsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorsApp.release.xcconfig"; path = "Target Support Files/Pods-TutorsApp/Pods-TutorsApp.release.xcconfig"; sourceTree = "<group>"; };
+		DB15A12821B8979F00C10542 /* Departments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departments.swift; sourceTree = "<group>"; };
+		DB15A12A21B89D5000C10542 /* FirebaseDepartments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDepartments.swift; sourceTree = "<group>"; };
+		DB15A12C21B89DF000C10542 /* FirebaseClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClasses.swift; sourceTree = "<group>"; };
+		DB15A12F21B8A4A100C10542 /* DeptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeptTableViewCell.swift; sourceTree = "<group>"; };
 		DB5A2CF8216C221800281FF2 /* TutorsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5A2CFB216C221800281FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5A2CFD216C221800281FF2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DB5A2CFF216C221800281FF2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DB5A2CFF216C221800281FF2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DB5A2D02216C221800281FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB5A2D04216C221B00281FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5A2D07216C221B00281FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5A2D09216C221B00281FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB94AE86219CF11D00355792 /* Tutors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutors.swift; sourceTree = "<group>"; };
-		DB94AE88219CFC0600355792 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
-		DB94AE8A219CFC2000355792 /* TutorsClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorsClasses.swift; sourceTree = "<group>"; };
+		DB9D590C21BC3C0F0031E574 /* OfferClassesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferClassesTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D590E21BC82540031E574 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DB9D591021BC94820031E574 /* OTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D591221BC94DC0031E574 /* OffersResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersResult.swift; sourceTree = "<group>"; };
 		DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBC3F605219BE592009B54FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVerifierViewController.swift; sourceTree = "<group>"; };
 		DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		DBF8C96021B9B4AC00681727 /* Offers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offers.swift; sourceTree = "<group>"; };
+		DBF8C96221B9BFF200681727 /* MyOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOffers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +110,14 @@
 			children = (
 				DB5A2CFB216C221800281FF2 /* AppDelegate.swift */,
 				DB5A2CFD216C221800281FF2 /* FirstViewController.swift */,
-				DB5A2CFF216C221800281FF2 /* SecondViewController.swift */,
+				DB5A2CFF216C221800281FF2 /* Profile.swift */,
 				DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */,
+				DB15A12821B8979F00C10542 /* Departments.swift */,
+				DB15A12F21B8A4A100C10542 /* DeptTableViewCell.swift */,
+				DBF8C96221B9BFF200681727 /* MyOffers.swift */,
+				DB9D590C21BC3C0F0031E574 /* OfferClassesTableViewCell.swift */,
+				DB9D591221BC94DC0031E574 /* OffersResult.swift */,
+				DB9D591021BC94820031E574 /* OTableViewCell.swift */,
 				DBC3F604219BE4B9009B54FD /* Authentification */,
 				DB94AE85219CF0D400355792 /* FireStoreClasses */,
 				DB5A2D01216C221800281FF2 /* Main.storyboard */,
@@ -112,9 +132,10 @@
 		DB94AE85219CF0D400355792 /* FireStoreClasses */ = {
 			isa = PBXGroup;
 			children = (
-				DB94AE86219CF11D00355792 /* Tutors.swift */,
-				DB94AE88219CFC0600355792 /* Schedule.swift */,
-				DB94AE8A219CFC2000355792 /* TutorsClasses.swift */,
+				DB15A12A21B89D5000C10542 /* FirebaseDepartments.swift */,
+				DB15A12C21B89DF000C10542 /* FirebaseClasses.swift */,
+				DBF8C96021B9B4AC00681727 /* Offers.swift */,
+				DB9D590E21BC82540031E574 /* User.swift */,
 			);
 			path = FireStoreClasses;
 			sourceTree = "<group>";
@@ -272,13 +293,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */,
-				DB5A2D00216C221800281FF2 /* SecondViewController.swift in Sources */,
+				DB9D591321BC94DC0031E574 /* OffersResult.swift in Sources */,
+				DB5A2D00216C221800281FF2 /* Profile.swift in Sources */,
+				DB9D591121BC94820031E574 /* OTableViewCell.swift in Sources */,
 				DBF34038216C5B7B0064BA67 /* ProfileTableViewCell.swift in Sources */,
-				DB94AE8B219CFC2000355792 /* TutorsClasses.swift in Sources */,
+				DB15A12921B8979F00C10542 /* Departments.swift in Sources */,
+				DB15A12B21B89D5000C10542 /* FirebaseDepartments.swift in Sources */,
+				DB15A12D21B89DF000C10542 /* FirebaseClasses.swift in Sources */,
+				DB9D590F21BC82540031E574 /* User.swift in Sources */,
+				DBF8C96121B9B4AC00681727 /* Offers.swift in Sources */,
+				DB15A13021B8A4A100C10542 /* DeptTableViewCell.swift in Sources */,
+				DBF8C96321B9BFF200681727 /* MyOffers.swift in Sources */,
 				DB5A2CFC216C221800281FF2 /* AppDelegate.swift in Sources */,
-				DB94AE87219CF11D00355792 /* Tutors.swift in Sources */,
+				DB9D590D21BC3C0F0031E574 /* OfferClassesTableViewCell.swift in Sources */,
 				DBC3F606219BE592009B54FD /* LoginViewController.swift in Sources */,
-				DB94AE89219CFC0600355792 /* Schedule.swift in Sources */,
 				DB5A2CFE216C221800281FF2 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
