@@ -46,9 +46,7 @@ class OffersResult: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = false
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -71,6 +69,13 @@ class OffersResult: UIViewController, UITableViewDelegate, UITableViewDataSource
         }
         cell.selectionStyle = .none
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let off = offers[indexPath.row]
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as! Detail
+        vc.offer = off
+        self.show(vc, sender: self)
     }
     
     func retrieveUser(){

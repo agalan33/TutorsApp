@@ -15,5 +15,6 @@ target 'TutorsApp' do
   pod 'Firebase/Messaging'
   pod 'Firebase/RemoteConfig'
   pod 'Firebase/Firestore'
+  pod 'Cosmos', '~> 17.0'
 
 end

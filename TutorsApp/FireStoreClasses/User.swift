@@ -16,6 +16,7 @@ class User: NSObject {
     var offers = [Offers]()
     var ref: DatabaseReference!
     var firebaseKey: String?
+    var reviews = [Rating]()
     
     init(snapshot: DataSnapshot){
         self.ref = snapshot.ref
@@ -32,6 +33,11 @@ class User: NSObject {
         for i in off.children{
             let newOffer = Offers(snapshot: i as! DataSnapshot)
             offers.append(newOffer)
+        }
+        let re = snapshot.childSnapshot(forPath: "Reviews")
+        for i in re.children{
+            let newRating = Rating(snapshot: i as! DataSnapshot)
+            self.reviews.append(newRating)
         }
     }
 }
