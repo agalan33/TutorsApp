@@ -7,23 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C31D9E165546546F68683DF /* Pods_TutorsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D0FF0BB69244906E48D09E1 /* Pods_TutorsApp.framework */; };
+		DB15A12921B8979F00C10542 /* Departments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15A12821B8979F00C10542 /* Departments.swift */; };
+		DB15A12B21B89D5000C10542 /* FirebaseDepartments.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15A12A21B89D5000C10542 /* FirebaseDepartments.swift */; };
+		DB15A12D21B89DF000C10542 /* FirebaseClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15A12C21B89DF000C10542 /* FirebaseClasses.swift */; };
+		DB15A13021B8A4A100C10542 /* DeptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB15A12F21B8A4A100C10542 /* DeptTableViewCell.swift */; };
+		DB2731D421BE0161008C1CFF /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2731D321BE0161008C1CFF /* Detail.swift */; };
 		DB5A2CFC216C221800281FF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFB216C221800281FF2 /* AppDelegate.swift */; };
 		DB5A2CFE216C221800281FF2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFD216C221800281FF2 /* FirstViewController.swift */; };
-		DB5A2D00216C221800281FF2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFF216C221800281FF2 /* SecondViewController.swift */; };
+		DB5A2D00216C221800281FF2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A2CFF216C221800281FF2 /* Profile.swift */; };
 		DB5A2D03216C221800281FF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D01216C221800281FF2 /* Main.storyboard */; };
 		DB5A2D05216C221B00281FF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D04216C221B00281FF2 /* Assets.xcassets */; };
 		DB5A2D08216C221B00281FF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5A2D06216C221B00281FF2 /* LaunchScreen.storyboard */; };
+		DB6A149621BDF9A700BD85A7 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6A149521BDF9A700BD85A7 /* Chat.swift */; };
+		DB9D590D21BC3C0F0031E574 /* OfferClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D590C21BC3C0F0031E574 /* OfferClassesTableViewCell.swift */; };
+		DB9D590F21BC82540031E574 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D590E21BC82540031E574 /* User.swift */; };
+		DB9D591121BC94820031E574 /* OTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591021BC94820031E574 /* OTableViewCell.swift */; };
+		DB9D591321BC94DC0031E574 /* OffersResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591221BC94DC0031E574 /* OffersResult.swift */; };
+		DB9D591521BD63420031E574 /* MCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591421BD63420031E574 /* MCTableViewCell.swift */; };
+		DB9D591721BD63C90031E574 /* MyClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591621BD63C90031E574 /* MyClasses.swift */; };
+		DB9D591921BD7A1C0031E574 /* MOTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591821BD7A1C0031E574 /* MOTableViewCell.swift */; };
+		DB9D591B21BD82BA0031E574 /* TutorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591A21BD82BA0031E574 /* TutorsTableViewCell.swift */; };
+		DB9D591D21BD83BD0031E574 /* Tutors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591C21BD83BD0031E574 /* Tutors.swift */; };
+		DB9D591F21BDBDFF0031E574 /* TutorProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D591E21BDBDFF0031E574 /* TutorProfile.swift */; };
+		DB9D592121BDC3280031E574 /* TutorsClassesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D592021BDC3280031E574 /* TutorsClassesTableViewCell.swift */; };
+		DB9D592321BDCBB00031E574 /* TutorOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D592221BDCBB00031E574 /* TutorOffersTableViewCell.swift */; };
+		DB9D592521BDDFBE0031E574 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D592421BDDFBE0031E574 /* Rating.swift */; };
+		DB9D592721BDE6910031E574 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D592621BDE6910031E574 /* Launch.swift */; };
+		DB9D592921BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D592821BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift */; };
+		DBA44B2421BFF77B00A596AD /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44B2321BFF77B00A596AD /* ChatsViewController.swift */; };
+		DBA44B2621BFF8CF00A596AD /* TutorsRated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44B2521BFF8CF00A596AD /* TutorsRated.swift */; };
+		DBA44B2821BFFF6A00A596AD /* RRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44B2721BFFF6A00A596AD /* RRTableViewCell.swift */; };
+		DBA44B2A21BFFFD100A596AD /* MyReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44B2921BFFFD100A596AD /* MyReviews.swift */; };
+		DBC3F603219BD55A009B54FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */; };
+		DBC3F606219BE592009B54FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F605219BE592009B54FD /* LoginViewController.swift */; };
+		DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */; };
+		DBF34038216C5B7B0064BA67 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */; };
+		DBF8C96121B9B4AC00681727 /* Offers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C96021B9B4AC00681727 /* Offers.swift */; };
+		DBF8C96321B9BFF200681727 /* MyOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C96221B9BFF200681727 /* MyOffers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2065BAE502F1C9F456AA7655 /* Pods-TutorsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorsApp.debug.xcconfig"; path = "Target Support Files/Pods-TutorsApp/Pods-TutorsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2D0FF0BB69244906E48D09E1 /* Pods_TutorsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TutorsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF23C6017E681C4184895AEF /* Pods-TutorsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TutorsApp.release.xcconfig"; path = "Target Support Files/Pods-TutorsApp/Pods-TutorsApp.release.xcconfig"; sourceTree = "<group>"; };
+		DB15A12821B8979F00C10542 /* Departments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departments.swift; sourceTree = "<group>"; };
+		DB15A12A21B89D5000C10542 /* FirebaseDepartments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDepartments.swift; sourceTree = "<group>"; };
+		DB15A12C21B89DF000C10542 /* FirebaseClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseClasses.swift; sourceTree = "<group>"; };
+		DB15A12F21B8A4A100C10542 /* DeptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeptTableViewCell.swift; sourceTree = "<group>"; };
+		DB2731D321BE0161008C1CFF /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		DB5A2CF8216C221800281FF2 /* TutorsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5A2CFB216C221800281FF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5A2CFD216C221800281FF2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		DB5A2CFF216C221800281FF2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DB5A2CFF216C221800281FF2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		DB5A2D02216C221800281FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB5A2D04216C221B00281FF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5A2D07216C221B00281FF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5A2D09216C221B00281FF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6A149521BDF9A700BD85A7 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		DB9D590C21BC3C0F0031E574 /* OfferClassesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferClassesTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D590E21BC82540031E574 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DB9D591021BC94820031E574 /* OTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D591221BC94DC0031E574 /* OffersResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersResult.swift; sourceTree = "<group>"; };
+		DB9D591421BD63420031E574 /* MCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D591621BD63C90031E574 /* MyClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClasses.swift; sourceTree = "<group>"; };
+		DB9D591821BD7A1C0031E574 /* MOTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D591A21BD82BA0031E574 /* TutorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorsTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D591C21BD83BD0031E574 /* Tutors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutors.swift; sourceTree = "<group>"; };
+		DB9D591E21BDBDFF0031E574 /* TutorProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorProfile.swift; sourceTree = "<group>"; };
+		DB9D592021BDC3280031E574 /* TutorsClassesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorsClassesTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D592221BDCBB00031E574 /* TutorOffersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorOffersTableViewCell.swift; sourceTree = "<group>"; };
+		DB9D592421BDDFBE0031E574 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		DB9D592621BDE6910031E574 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		DB9D592821BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorsReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		DBA44B2321BFF77B00A596AD /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		DBA44B2521BFF8CF00A596AD /* TutorsRated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorsRated.swift; sourceTree = "<group>"; };
+		DBA44B2721BFFF6A00A596AD /* RRTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRTableViewCell.swift; sourceTree = "<group>"; };
+		DBA44B2921BFFFD100A596AD /* MyReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviews.swift; sourceTree = "<group>"; };
+		DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBC3F605219BE592009B54FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVerifierViewController.swift; sourceTree = "<group>"; };
+		DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		DBF8C96021B9B4AC00681727 /* Offers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offers.swift; sourceTree = "<group>"; };
+		DBF8C96221B9BFF200681727 /* MyOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOffers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +97,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C31D9E165546546F68683DF /* Pods_TutorsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C760075F006D3A3E6CA3E9E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2065BAE502F1C9F456AA7655 /* Pods-TutorsApp.debug.xcconfig */,
+				AF23C6017E681C4184895AEF /* Pods-TutorsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA1C94C55F193F2197B5C2D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D0FF0BB69244906E48D09E1 /* Pods_TutorsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB5A2CEF216C221800281FF2 = {
 			isa = PBXGroup;
 			children = (
 				DB5A2CFA216C221800281FF2 /* TutorsApp */,
 				DB5A2CF9216C221800281FF2 /* Products */,
+				C760075F006D3A3E6CA3E9E9 /* Pods */,
+				CA1C94C55F193F2197B5C2D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +144,60 @@
 			children = (
 				DB5A2CFB216C221800281FF2 /* AppDelegate.swift */,
 				DB5A2CFD216C221800281FF2 /* FirstViewController.swift */,
-				DB5A2CFF216C221800281FF2 /* SecondViewController.swift */,
+				DB5A2CFF216C221800281FF2 /* Profile.swift */,
+				DBF34037216C5B7B0064BA67 /* ProfileTableViewCell.swift */,
+				DB15A12821B8979F00C10542 /* Departments.swift */,
+				DB15A12F21B8A4A100C10542 /* DeptTableViewCell.swift */,
+				DBF8C96221B9BFF200681727 /* MyOffers.swift */,
+				DB9D590C21BC3C0F0031E574 /* OfferClassesTableViewCell.swift */,
+				DB9D591221BC94DC0031E574 /* OffersResult.swift */,
+				DB9D591021BC94820031E574 /* OTableViewCell.swift */,
+				DB9D591421BD63420031E574 /* MCTableViewCell.swift */,
+				DB9D591621BD63C90031E574 /* MyClasses.swift */,
+				DB9D591821BD7A1C0031E574 /* MOTableViewCell.swift */,
+				DB9D591A21BD82BA0031E574 /* TutorsTableViewCell.swift */,
+				DB9D591C21BD83BD0031E574 /* Tutors.swift */,
+				DB9D591E21BDBDFF0031E574 /* TutorProfile.swift */,
+				DB9D592021BDC3280031E574 /* TutorsClassesTableViewCell.swift */,
+				DB6A149521BDF9A700BD85A7 /* Chat.swift */,
+				DB2731D321BE0161008C1CFF /* Detail.swift */,
+				DB9D592821BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift */,
+				DB9D592221BDCBB00031E574 /* TutorOffersTableViewCell.swift */,
+				DBA44B2321BFF77B00A596AD /* ChatsViewController.swift */,
+				DBC3F604219BE4B9009B54FD /* Authentification */,
+				DB94AE85219CF0D400355792 /* FireStoreClasses */,
 				DB5A2D01216C221800281FF2 /* Main.storyboard */,
 				DB5A2D04216C221B00281FF2 /* Assets.xcassets */,
 				DB5A2D06216C221B00281FF2 /* LaunchScreen.storyboard */,
+				DB9D592621BDE6910031E574 /* Launch.swift */,
 				DB5A2D09216C221B00281FF2 /* Info.plist */,
+				DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */,
+				DBA44B2521BFF8CF00A596AD /* TutorsRated.swift */,
+				DBA44B2721BFFF6A00A596AD /* RRTableViewCell.swift */,
+				DBA44B2921BFFFD100A596AD /* MyReviews.swift */,
 			);
 			path = TutorsApp;
+			sourceTree = "<group>";
+		};
+		DB94AE85219CF0D400355792 /* FireStoreClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DB15A12A21B89D5000C10542 /* FirebaseDepartments.swift */,
+				DB15A12C21B89DF000C10542 /* FirebaseClasses.swift */,
+				DBF8C96021B9B4AC00681727 /* Offers.swift */,
+				DB9D590E21BC82540031E574 /* User.swift */,
+				DB9D592421BDDFBE0031E574 /* Rating.swift */,
+			);
+			path = FireStoreClasses;
+			sourceTree = "<group>";
+		};
+		DBC3F604219BE4B9009B54FD /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				DBC3F605219BE592009B54FD /* LoginViewController.swift */,
+				DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */,
+			);
+			path = Authentification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB5A2D0C216C221B00281FF2 /* Build configuration list for PBXNativeTarget "TutorsApp" */;
 			buildPhases = (
+				93A94B5D8921140FF833317D /* [CP] Check Pods Manifest.lock */,
 				DB5A2CF4216C221800281FF2 /* Sources */,
 				DB5A2CF5216C221800281FF2 /* Frameworks */,
 				DB5A2CF6216C221800281FF2 /* Resources */,
+				1A19DB5FE15F2611ABA05FEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5A2D08216C221B00281FF2 /* LaunchScreen.storyboard in Resources */,
+				DBC3F603219BD55A009B54FD /* GoogleService-Info.plist in Resources */,
 				DB5A2D05216C221B00281FF2 /* Assets.xcassets in Resources */,
 				DB5A2D03216C221800281FF2 /* Main.storyboard in Resources */,
 			);
@@ -133,13 +269,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A19DB5FE15F2611ABA05FEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TutorsApp/Pods-TutorsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TutorsApp/Pods-TutorsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A94B5D8921140FF833317D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TutorsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB5A2CF4216C221800281FF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB5A2D00216C221800281FF2 /* SecondViewController.swift in Sources */,
+				DB9D591921BD7A1C0031E574 /* MOTableViewCell.swift in Sources */,
+				DB9D592121BDC3280031E574 /* TutorsClassesTableViewCell.swift in Sources */,
+				DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */,
+				DBA44B2621BFF8CF00A596AD /* TutorsRated.swift in Sources */,
+				DB9D591321BC94DC0031E574 /* OffersResult.swift in Sources */,
+				DB9D592921BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift in Sources */,
+				DB5A2D00216C221800281FF2 /* Profile.swift in Sources */,
+				DBA44B2A21BFFFD100A596AD /* MyReviews.swift in Sources */,
+				DB2731D421BE0161008C1CFF /* Detail.swift in Sources */,
+				DB9D591121BC94820031E574 /* OTableViewCell.swift in Sources */,
+				DB9D591521BD63420031E574 /* MCTableViewCell.swift in Sources */,
+				DB9D592321BDCBB00031E574 /* TutorOffersTableViewCell.swift in Sources */,
+				DB6A149621BDF9A700BD85A7 /* Chat.swift in Sources */,
+				DBF34038216C5B7B0064BA67 /* ProfileTableViewCell.swift in Sources */,
+				DB15A12921B8979F00C10542 /* Departments.swift in Sources */,
+				DB9D592721BDE6910031E574 /* Launch.swift in Sources */,
+				DB9D591B21BD82BA0031E574 /* TutorsTableViewCell.swift in Sources */,
+				DB15A12B21B89D5000C10542 /* FirebaseDepartments.swift in Sources */,
+				DB9D592521BDDFBE0031E574 /* Rating.swift in Sources */,
+				DB15A12D21B89DF000C10542 /* FirebaseClasses.swift in Sources */,
+				DB9D591D21BD83BD0031E574 /* Tutors.swift in Sources */,
+				DB9D590F21BC82540031E574 /* User.swift in Sources */,
+				DB9D591721BD63C90031E574 /* MyClasses.swift in Sources */,
+				DBF8C96121B9B4AC00681727 /* Offers.swift in Sources */,
+				DBA44B2821BFFF6A00A596AD /* RRTableViewCell.swift in Sources */,
+				DBA44B2421BFF77B00A596AD /* ChatsViewController.swift in Sources */,
+				DB15A13021B8A4A100C10542 /* DeptTableViewCell.swift in Sources */,
+				DBF8C96321B9BFF200681727 /* MyOffers.swift in Sources */,
 				DB5A2CFC216C221800281FF2 /* AppDelegate.swift in Sources */,
+				DB9D591F21BDBDFF0031E574 /* TutorProfile.swift in Sources */,
+				DB9D590D21BC3C0F0031E574 /* OfferClassesTableViewCell.swift in Sources */,
+				DBC3F606219BE592009B54FD /* LoginViewController.swift in Sources */,
 				DB5A2CFE216C221800281FF2 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +521,7 @@
 		};
 		DB5A2D0D216C221B00281FF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2065BAE502F1C9F456AA7655 /* Pods-TutorsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,15 +531,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HubColegial.TutorsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HubColegial.TutorsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DB5A2D0E216C221B00281FF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF23C6017E681C4184895AEF /* Pods-TutorsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,10 +550,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = HubColegial.TutorsApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HubColegial.TutorsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
