@@ -116,7 +116,7 @@ class MyOffers: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
             }
             counter = counter + 1
         }
-        let newOffer = Offers(tutorName: (userInfo?.name!)!, title: titleTextField.text!, comment: commentTableView.text!, tutorUID: (user?.uid)!, offerImage: "tutorDark", classes: oc)
+        let newOffer = Offers(tutorName: (userInfo?.name!)!, title: titleTextField.text!, comment: commentTableView.text!, tutorUID: (user?.uid)!, offerImage: "ijij", classes: oc)
         self.ref.child((user?.uid)!).child("Offers").child(randomKey!).setValue(newOffer.toDictionary())
         titleTextField.text = ""
         commentTableView.text = "Comment..."

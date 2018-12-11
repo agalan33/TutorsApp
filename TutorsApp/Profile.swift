@@ -34,6 +34,18 @@ class Profile: UIViewController, UITableViewDataSource, UITableViewDelegate {
         myUser()
     }
     
+    
+    @IBAction func help(_ sender: Any) {
+        if let url = URL(string: "https://github.com/agalan33/TutorsApp") {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:])
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        
+    }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
     }
@@ -72,6 +84,18 @@ class Profile: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
         else if indexPath.section == 1 && indexPath.row == 0{
             let vc = storyboard?.instantiateViewController(withIdentifier: "mc") as! MyClasses
+            self.show(vc, sender: self)
+        }
+        else if indexPath.section == 0 && indexPath.row == 0{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "Cht") as! ChatsViewController
+            self.show(vc, sender: self)
+        }
+        else if indexPath.section == 0 && indexPath.row == 1{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "TRT") as! TutorsRated
+            self.show(vc, sender: self)
+        }
+        else if indexPath.section == 1 && indexPath.row == 2{
+            let vc = storyboard?.instantiateViewController(withIdentifier: "REV") as! MyReviews
             self.show(vc, sender: self)
         }
     }

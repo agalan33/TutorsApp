@@ -33,6 +33,7 @@ class FirstViewController: UIViewController, UITextFieldDelegate{
 
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
+        searchField.backgroundColor = .groupTableViewBackground
     }
     
     @IBAction func SearchButton(_ sender: Any) {
@@ -56,6 +57,10 @@ class FirstViewController: UIViewController, UITextFieldDelegate{
             }
             self.dismissKeyboard()
             self.show(vc, sender: self)
+        }
+        
+        else{
+            searchField.backgroundColor = UIColor(red:0.94, green:0.33, blue:0.27, alpha:1.0)
         }
     }
     

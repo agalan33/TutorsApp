@@ -76,7 +76,14 @@ class Departments: UIViewController, UITableViewDelegate, UITableViewDataSource,
         
     }
     
+    
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        dismissKeyboard()
+    }
+    
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchB.text = ""
         dismissKeyboard()
     }
     

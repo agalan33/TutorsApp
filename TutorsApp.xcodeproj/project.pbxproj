@@ -35,6 +35,10 @@
 		DB9D592521BDDFBE0031E574 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D592421BDDFBE0031E574 /* Rating.swift */; };
 		DB9D592721BDE6910031E574 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D592621BDE6910031E574 /* Launch.swift */; };
 		DB9D592921BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9D592821BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift */; };
+		DBA44B2421BFF77B00A596AD /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44B2321BFF77B00A596AD /* ChatsViewController.swift */; };
+		DBA44B2621BFF8CF00A596AD /* TutorsRated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44B2521BFF8CF00A596AD /* TutorsRated.swift */; };
+		DBA44B2821BFFF6A00A596AD /* RRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44B2721BFFF6A00A596AD /* RRTableViewCell.swift */; };
+		DBA44B2A21BFFFD100A596AD /* MyReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA44B2921BFFFD100A596AD /* MyReviews.swift */; };
 		DBC3F603219BD55A009B54FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */; };
 		DBC3F606219BE592009B54FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F605219BE592009B54FD /* LoginViewController.swift */; };
 		DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */; };
@@ -76,6 +80,10 @@
 		DB9D592421BDDFBE0031E574 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
 		DB9D592621BDE6910031E574 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		DB9D592821BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorsReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		DBA44B2321BFF77B00A596AD /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		DBA44B2521BFF8CF00A596AD /* TutorsRated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorsRated.swift; sourceTree = "<group>"; };
+		DBA44B2721BFFF6A00A596AD /* RRTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRTableViewCell.swift; sourceTree = "<group>"; };
+		DBA44B2921BFFFD100A596AD /* MyReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReviews.swift; sourceTree = "<group>"; };
 		DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBC3F605219BE592009B54FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBC3F607219BFD68009B54FD /* AuthVerifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVerifierViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 				DB2731D321BE0161008C1CFF /* Detail.swift */,
 				DB9D592821BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift */,
 				DB9D592221BDCBB00031E574 /* TutorOffersTableViewCell.swift */,
+				DBA44B2321BFF77B00A596AD /* ChatsViewController.swift */,
 				DBC3F604219BE4B9009B54FD /* Authentification */,
 				DB94AE85219CF0D400355792 /* FireStoreClasses */,
 				DB5A2D01216C221800281FF2 /* Main.storyboard */,
@@ -163,6 +172,9 @@
 				DB9D592621BDE6910031E574 /* Launch.swift */,
 				DB5A2D09216C221B00281FF2 /* Info.plist */,
 				DBC3F602219BD55A009B54FD /* GoogleService-Info.plist */,
+				DBA44B2521BFF8CF00A596AD /* TutorsRated.swift */,
+				DBA44B2721BFFF6A00A596AD /* RRTableViewCell.swift */,
+				DBA44B2921BFFFD100A596AD /* MyReviews.swift */,
 			);
 			path = TutorsApp;
 			sourceTree = "<group>";
@@ -336,9 +348,11 @@
 				DB9D591921BD7A1C0031E574 /* MOTableViewCell.swift in Sources */,
 				DB9D592121BDC3280031E574 /* TutorsClassesTableViewCell.swift in Sources */,
 				DBC3F608219BFD68009B54FD /* AuthVerifierViewController.swift in Sources */,
+				DBA44B2621BFF8CF00A596AD /* TutorsRated.swift in Sources */,
 				DB9D591321BC94DC0031E574 /* OffersResult.swift in Sources */,
 				DB9D592921BDEAAC0031E574 /* TutorsReviewsTableViewCell.swift in Sources */,
 				DB5A2D00216C221800281FF2 /* Profile.swift in Sources */,
+				DBA44B2A21BFFFD100A596AD /* MyReviews.swift in Sources */,
 				DB2731D421BE0161008C1CFF /* Detail.swift in Sources */,
 				DB9D591121BC94820031E574 /* OTableViewCell.swift in Sources */,
 				DB9D591521BD63420031E574 /* MCTableViewCell.swift in Sources */,
@@ -355,6 +369,8 @@
 				DB9D590F21BC82540031E574 /* User.swift in Sources */,
 				DB9D591721BD63C90031E574 /* MyClasses.swift in Sources */,
 				DBF8C96121B9B4AC00681727 /* Offers.swift in Sources */,
+				DBA44B2821BFFF6A00A596AD /* RRTableViewCell.swift in Sources */,
+				DBA44B2421BFF77B00A596AD /* ChatsViewController.swift in Sources */,
 				DB15A13021B8A4A100C10542 /* DeptTableViewCell.swift in Sources */,
 				DBF8C96321B9BFF200681727 /* MyOffers.swift in Sources */,
 				DB5A2CFC216C221800281FF2 /* AppDelegate.swift in Sources */,

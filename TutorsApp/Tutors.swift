@@ -21,6 +21,7 @@ class Tutors: UIViewController, UITableViewDelegate, UITableViewDataSource, UISe
         super.viewDidLoad()
         tutorsTableView.delegate = self
         tutorsTableView.dataSource = self
+        searchB.delegate = self
         users()
     }
     
@@ -75,6 +76,22 @@ class Tutors: UIViewController, UITableViewDelegate, UITableViewDataSource, UISe
         self.show(vc, sender: self)
     }
     
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchB.setShowsCancelButton(true, animated: true)
+    }
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchB.setShowsCancelButton(false, animated: true)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        dismissKeyboard()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchB.text = ""
+        dismissKeyboard()
+    }
+    
     func users(){
         self.ref = Database.database(url: "https://hubcolegial-tutorsapp.firebaseio.com/").reference(withPath: "Tutors")
         self.ref.observe(.value) { (snapshot) in
@@ -85,6 +102,10 @@ class Tutors: UIViewController, UITableViewDelegate, UITableViewDataSource, UISe
             }
             self.tutorsTableView.reloadData()
         }
+    }
+    
+    func dismissKeyboard(){
+        self.view.endEditing(true)
     }
 
     
